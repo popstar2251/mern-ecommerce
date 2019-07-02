@@ -46,7 +46,7 @@ export const updateProfile = () => {
     const userId = cookie.load('user');
 
     try {
-      const response = await axios.post(`/api/user/${userId}`, {
+      const response = await axios.put(`/api/user/${userId}`, {
         profile: profile
       });
 
