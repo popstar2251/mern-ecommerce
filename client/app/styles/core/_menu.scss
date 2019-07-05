@@ -1,0 +1,38 @@
+// mini menu
+.mini-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: $white;
+  height: 100%;
+  width: 470px;
+  z-index: 1000;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  @include transition($layout-transition-higher-speed);
+
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+    top: 148px;
+  }
+}
+
+// show hidden menu popup
+.mini-menu-open {
+  .mini-menu {
+    left: 0;
+    @include transition($layout-transition-higher-speed);
+  }
+
+  .dark-overflow {
+    @include dark-overflow();
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+      top: 148px;
+    }
+  }
+}
+
+.navigation-menu {
+  height: 100%;
+}
