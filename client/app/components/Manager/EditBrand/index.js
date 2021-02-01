@@ -20,7 +20,7 @@ const EditBrand = props => {
   };
 
   return (
-    <div className='add-brand'>
+    <div className='edit-brand'>
       <form onSubmit={handleSubmit} noValidate>
         <Row>
           <Col xs='12'>

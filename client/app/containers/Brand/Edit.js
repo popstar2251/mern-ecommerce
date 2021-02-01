@@ -1,6 +1,6 @@
 /*
  *
- * Add
+ * Edit
  *
  */
 
@@ -31,8 +31,8 @@ class Edit extends React.PureComponent {
     const {
       history,
       brand,
-      brandEditChange,
       formErrors,
+      brandEditChange,
       updateBrand,
       deleteBrand
     } = this.props;
@@ -61,9 +61,7 @@ class Edit extends React.PureComponent {
 
 const mapStateToProps = state => {
   return {
-    brands: state.brand.brands,
     brand: state.brand.brand,
-    brandFormData: state.brand.brandFormData,
     formErrors: state.brand.editFormErrors
   };
 };
